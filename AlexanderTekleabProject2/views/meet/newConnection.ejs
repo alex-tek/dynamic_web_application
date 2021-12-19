@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs')%>
+<div class="create">
+
+    <div class="title">Create a Cars and Coffee Meet</div>
+
+    
+        <form action = '/connections' method = 'POST'>
+
+            <label><span>Topic: <span class="required">*</span></span><input
+            type="text" class="input-field" name="topic" placeholder="topic" /></label>
+                        
+            <label><span>Host: <span class="required">*</span></span><input type="text" class="input-field" name="host" placeholder="host"/></label>
+            
+            <label><span>Where: <span class="required">*</span></span><input type="text" class="input-field" name="where" placeholder="where"/></label>
+                        
+            <label><span>When: <span class="required">*</span></span><input type="date" class="input-field" name="when"/></label>
+            
+            <label><span>Start: <span class="required">*</span></span><input type="time" class="input-field" name="start" value="00:00"/></label>
+            
+            <label><span>End: <span class="required">*</span></span><input type="time" class="input-field" name="end" value="23:59"/></label>
+            
+            <label><span>Details: <span class="required">*</span></span><textarea name="details" class="textarea-field" placeholder='description'></textarea></label>
+
+            
+            <label><span>Image URL: <span class="required">*</span></span><input type="text" class="input-field" name="image" placeholder="imageURL"/></label>
+            
+            
+            <input type="submit" value="Create Meet"/>
+                
+        </form>
+
+</div>
+    <%- include('../partials/footer.ejs')%>

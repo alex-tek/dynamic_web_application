@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %>
+<section class='list'>
+    <div class='meetList'>
+
+         <% if (topics.length > 0) { %>
+           <% for (var i = 0; i < topics.length; i++) { %>
+            <h2><%=topics[i]%></h2>
+            <% for (var j = 0; j < meets.length; j++) { %>
+                <% if(topics[i]==meets[j].topic){%> 
+               <a href="/connections/<%=meets[j].id%>"
+                 <p><%=meets[j].title%></p>
+                </a>
+
+            <%}}%>
+
+
+          <%  }} else { %>
+           <h2>There are no events to display.</h2>
+       <% } %>
+
+
+    </div>
+
+</section>
+<%- include('../partials/footer.ejs') %>

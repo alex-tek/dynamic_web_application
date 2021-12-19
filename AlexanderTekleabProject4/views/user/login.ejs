@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs')%>
+<div class="create">
+
+    <div class="login">Login</div>
+
+    
+        <form action = '/users/login' method = 'POST'>
+
+                        
+            <label><span>Email Address: <span class="required">*</span></span><input type="email" class="input-field" name="email" placeholder="example@gmail.com" required/></label>
+            
+            <label><span>Password: <span class="required">*</span></span><input type="password" class="input-field" name="password" minlength="8" placeholder="password" required/></label>
+            
+            
+            <button class="button button4">Login</button>
+                
+        </form>
+
+</div>
+    <%- include('../partials/footer.ejs')%>

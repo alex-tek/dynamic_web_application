@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %>
+    <div class = "content">
+
+       <% if (meets.length) { %>
+            <p>Select a story to read</p>
+           <% meets.forEach(meet => { %>
+                <a href='/meet/<%= meet.id %>'><p><%= meet.title %></p></a>
+
+           <% }); 
+        } else { %>
+           <P>There are no stories to display.</p>
+
+
+       <% } %>
+    </div>
+<%- include('../partials/footer.ejs') %>

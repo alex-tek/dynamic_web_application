@@ -1,0 +1,43 @@
+<%- include('../partials/header.ejs')%>
+
+        <section class='info'>
+
+        <div class='profile'>
+
+            <h2>Welcome, <%=user.firstName + ' ' + user.lastName%></h2>
+
+            
+
+            <% if(meets.length) { %>
+                 <p class='para'>You have created the following meets</p>
+                 
+                <% meets.forEach(meet => {%>
+                    <table>
+                        <tr>
+                          <th>Connections</th>
+                          <th>Category</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td><a href='/connections/<%= meet._id%>'><p><%= meet.title%></p></a></td>
+                          <td><%= meet.topic%></td>
+                          <td><form>
+                            <button class="button button1" type="submit" formmethod="GET" formaction="/connections/<%= meet.id %>/edit">Update</button>
+                            <button class="button button2" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/?_method=DELETE">Delete</button>
+                        </form></td>
+                        </tr>
+                      </table>
+
+                
+                <% });
+
+                
+             } else {%>
+                 <p>You have not created any meets</p>
+            <% }%>
+
+        </div>
+
+
+    </section>
+<%- include('../partials/footer.ejs')%>

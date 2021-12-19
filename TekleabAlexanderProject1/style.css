@@ -1,0 +1,231 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+nav img{
+    width: 100px;
+    float: left;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navBar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 17px;
+
+}
+
+.navBar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: .5s;    
+}
+.navBar ul li:hover::after{
+    width: 100%;
+}
+
+
+.meetups{
+    padding-left: 80px;
+    padding-top: 100px;
+    font-size: 17px;
+
+
+}
+
+
+
+hr{
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+.welcome h1{
+    text-align: center;
+}
+
+.welcome p{
+    padding-left: 70px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.welcome img{
+
+    width: 500px;
+    padding-left: 450px;
+    margin-top: 40px;
+}
+
+.personal{
+    padding-left: 50px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 100px;
+    font-size: 17px;
+}
+
+
+
+.icons{
+    
+    float: right;
+    padding-right: 50px;
+    margin-top: 100px;
+    font-size: 17px;
+    
+}
+
+.nav .current {
+	border-bottom: 2px solid black;
+	
+}
+
+/** footer info */
+
+footer p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/** connection page to see the connection and update or delete */
+
+img[alt="toyo"]{
+    float: left;
+    width: 500px;
+    margin-right: 50px;
+}
+
+.button {
+    
+    float: right;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  
+.button:hover{
+    border: 2px solid black;
+    background: white;
+    color: black;
+}
+
+.meetup1 h1,h2, h3, h4, h5, p {
+    text-align: left;
+}
+
+#titleMeet{
+    text-align: center;
+}
+
+/** Connections page filled with meets */
+
+.meetList  h2{
+    text-align: center;
+}
+
+
+
+.meetList a{
+    display: inline-block;
+    padding-left: 515px;
+}
+
+
+/** create a meet/connection page  customization of the form*/
+.create{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 14px Arial, Helvetica, sans-serif;
+    padding-left: 300px;
+ 
+}
+.title{
+	font-weight: bold;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.create label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.create label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.create span.required{
+	color:red;
+}
+
+.create input.input-field {
+	width: 50%;	
+}
+.create input.input-field, 
+.create .textarea-field {
+	box-sizing: border-box;
+	border: 1px solid #c4c3c3;
+	box-shadow: 1px 1px 4px #bebdbd;
+	border-radius: 4px;
+	padding: 8px;
+	outline: none;
+}
+
+.create .textarea-field{
+	height:100px;
+	width: 50%;
+}
+
+.create input[type=submit]{
+
+    margin-left: 540px;
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: white;
+	color: black;
+    border: 2px solid black;
+	box-shadow: 1px 1px 4px #bebdbd;
+
+	border-radius: 3px;
+}
+
+.create input[type=submit]:hover{
+    
+	background: black;
+	color: #fff;
+}
+
+
+
+
+
+
+

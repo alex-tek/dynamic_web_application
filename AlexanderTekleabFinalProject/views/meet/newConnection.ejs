@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs')%>
+<div class="create">
+
+    <div class="title">Create a Cars and Coffee Meet</div>
+
+    
+        <form action = '/connections' method = 'POST'>
+
+            <label><span>Topic: <span class="required">*</span></span><input
+            type="text" class="input-field" name="topic" placeholder="topic" minlength="2" required/></label>
+                        
+            <label><span>Title: <span class="required">*</span></span><input type="text" class="input-field" name="title" placeholder="title" minlength="2" required/></label>
+            
+            <label><span>Where: <span class="required">*</span></span><input type="text" class="input-field" name="where" placeholder="where" minlength="2" required/></label>
+                        
+            <label><span>When: <span class="required">*</span></span><input type="date" class="input-field" name="when" required/></label>
+            
+            <label><span>Start: <span class="required">*</span></span><input type="time" class="input-field" name="start" value="00:00" required/></label>
+            
+            <label><span>End: <span class="required">*</span></span><input type="time" class="input-field" name="end" value="23:59" required/></label>
+            
+            <label><span>Details: <span class="required">*</span></span><textarea name="details" class="textarea-field" placeholder='description' minlength="10" required></textarea></label>
+
+            
+            <label><span>Image URL: <span class="required">*</span></span><input type="text" class="input-field" name="image" placeholder="imageURL" required/></label>
+            
+            
+            <input type="submit" value="Create Meet"/>
+                
+        </form>
+
+</div>
+    <%- include('../partials/footer.ejs')%>

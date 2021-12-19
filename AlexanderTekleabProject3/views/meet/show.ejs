@@ -1,0 +1,36 @@
+<%- include('../partials/header.ejs') %>
+
+    <section class='connection1'>
+
+        <h1 id='titleMeet'>Hosted By: <%=meet.host%></h1>
+
+
+        <form>
+            <button class="button button1" type="submit" formmethod="GET" formaction="/connections/<%= meet.id %>/edit">Update</button>
+            <button class="button button2" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/?_method=DELETE">Delete</button>
+        </form>
+ 
+
+        <div class="meetup1">
+
+            
+            <img src='<%=meet.image%>' alt='toyo'>
+
+            <h2>Location: <%= meet.where %></h2>
+            <h3>Date: <%= meet.when %></h3>
+            <h4>Start Time: <%= meet.start %></h4>
+            <h5>End Time:  <%= meet.end %></h5>
+
+            <h3>Details</h3>
+
+            <p id="details"><%= meet.details %></p>
+
+        </div>
+        
+        
+    </section>
+
+
+
+
+<%- include('../partials/footer.ejs') %>

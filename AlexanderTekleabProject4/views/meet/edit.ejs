@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs')%>
+
+<div class="create">
+
+    <div class="title">Create a Cars and Coffee Meet</div>
+
+    
+        <form method="POST" action="/connections/<%= meet.id%>?_method=PUT">
+
+            <label><span>Topic: <span class="required">*</span></span><input
+            type="text" class="input-field" name="topic" value="<%= meet.topic%>" required/></label>
+                        
+            <label><span>Title: <span class="required">*</span></span><input type="text" class="input-field" name="title" value="<%= meet.title%>" required/></label>
+            
+            <label><span>Where: <span class="required">*</span></span><input type="text" class="input-field" name="where" value="<%= meet.where%>"/ required></label>
+                        
+            <label><span>When: <span class="required">*</span></span><input type="date" class="input-field" name="when" value="<%= meet.when%>" required/></label>
+            
+            <label><span>Start: <span class="required">*</span></span><input type="time" class="input-field" name="start" value="<%= meet.start%>" required/></label>
+            
+            <label><span>End: <span class="required">*</span></span><input type="time" class="input-field" name="end" value="<%= meet.end%>" required/></label>
+            
+            <label><span>Details: <span class="required">*</span></span><textarea name="details" class="textarea-field" required><%= meet.details %></textarea></label>
+
+            
+            <label><span>Image URL: <span class="required">*</span></span><input type="text" class="input-field" name="image" value="<%= meet.image%>" required/></label>
+            
+            
+            <input type="submit" value="Submit"/>
+                
+        </form>
+
+</div>
+    <%- include('../partials/footer.ejs')%>

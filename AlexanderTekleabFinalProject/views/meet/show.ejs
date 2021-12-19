@@ -1,0 +1,46 @@
+<%- include('../partials/header.ejs') %>
+
+    <section class='connection1'>
+
+        <h1 id='titleMeet'>Posted By: <%= meet.author.firstName + ' ' + meet.author.lastName%></h1>
+
+        <% if(user == meet.author._id) {%>
+        <form>
+            <button class="button button1" type="submit" formmethod="GET" formaction="/connections/<%= meet.id %>/edit">Update</button>
+            <button class="button button2" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/?_method=DELETE">Delete</button>
+        </form>
+        <%} else if(user && user != meet.hostName){%>
+            <form>
+                <h4 class='rsvpTag'>Make sure to RSVP!</h4>
+                <h5 class="len"><p class='num'><%=rsvps%></p> People are going</h5>
+                <button class="rsvp no" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/rsvp" name="rsvp" value="NO">No</button>
+                <button class="rsvp maybe" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/rsvp" name="rsvp" value="MAYBE">Maybe</button>
+                <button class="rsvp yes" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/rsvp" name="rsvp" value="YES">Yes</button>
+                
+            </form>
+            <%}%>
+ 
+
+        <div class="meetup1">
+
+            
+            <img src='<%=meet.image%>' alt='toyo'>
+
+            <h2>Location: <%= meet.where %></h2>
+            <h3>Date: <%= meet.when %></h3>
+            <h4>Start Time: <%= meet.start %></h4>
+            <h5>End Time:  <%= meet.end %></h5>
+
+            <h3>Details</h3>
+
+            <p id="details"><%= meet.details %></p>
+
+        </div>
+        
+        
+    </section>
+
+
+
+
+<%- include('../partials/footer.ejs') %>

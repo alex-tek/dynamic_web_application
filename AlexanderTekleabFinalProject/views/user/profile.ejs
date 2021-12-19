@@ -1,0 +1,73 @@
+<%- include('../partials/header.ejs')%>
+
+        <section class='info'>
+
+        <div class='profile'>
+
+            <h2>Welcome, <%=user.firstName + ' ' + user.lastName%></h2>
+
+            
+
+            <% if(meets.length) { %>
+                 <p class='para'>You have created the following Meets</p>
+                 
+                <% meets.forEach(meet => {%>
+                    <table>
+                        <tr>
+                          <th>Meet</th>
+                          <th>Category</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td><a href='/connections/<%= meet._id%>'><p><%= meet.title%></p></a></td>
+                          <td><%= meet.topic%></td>
+                          <td><form>
+                            <button class="button button1" type="submit" formmethod="GET" formaction="/connections/<%= meet.id %>/edit">Update</button>
+                            <button class="button button2" type="submit" formmethod="POST" formaction="/connections/<%= meet.id %>/?_method=DELETE">Delete</button>
+                        </form></td>
+                        </tr>
+                      </table>
+
+                
+                <% });
+
+                
+             } else {%>
+                 <p>You have not created any meets</p>
+            <% }%>
+
+            <% if(rsvps.length) { %>
+              <p class='tagRSVP'>You have RSP'd to the following Meets</p>
+              
+             <% rsvps.forEach(rsvp => {%>
+                 <table>
+                     <tr>
+                       <th>Meet</th>
+                       <th>Category</th>
+                       <th>Going?</th>
+                       <th>Actions</th>
+                     </tr>
+                     <tr>
+                       <td><a href='/connections/<%= rsvp.meet._id%>'><p><%= rsvp.meet.title%></p></a></td>
+                       <td><%= rsvp.meet.topic%></td>
+                       <td><%=rsvp.rsvp%></td>
+                       <td><form>
+                         <button class="button button1" type="submit" formmethod="GET" formaction="/connections/<%= rsvp.meet._id %>/">Update</button>
+                         <button class="button button2" type="submit" formmethod="POST" formaction="/connections/<%= rsvp.meet._id%>/rsvp?_method=DELETE">Delete</button>
+                     </form></td>
+                     </tr>
+                   </table>
+
+             
+             <% });
+
+             
+          } else {%>
+              <p>You have not RSVP'd to any Meets</p>
+         <% }%>
+
+        </div>
+
+
+    </section>
+<%- include('../partials/footer.ejs')%>

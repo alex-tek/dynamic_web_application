@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "619823a9c25d06ecc6ff8abd"
+  },
+  "topic": "Cars",
+  "title": "Toyo Tires Car Meet",
+  "where": "At Toyo Tires",
+  "when": "2021-11-30",
+  "start": "15:00",
+  "end": "20:00",
+  "details": "This is a Toyo Tires Meet",
+  "image": "https://cdn.shopify.com/s/files/1/0112/3414/8452/products/toyo.jpg",
+  "author": {
+    "$oid": "619822b2c25d06ecc6ff8ab8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "619823ffc25d06ecc6ff8ac0"
+  },
+  "topic": "Cars",
+  "title": "Soho Motorsport Meet",
+  "where": "At Soho Motorsport",
+  "when": "2021-11-24",
+  "start": "13:00",
+  "end": "17:00",
+  "details": "This is a Soho Motorsport Meet",
+  "image": "https://2.bp.blogspot.com/-b8-kxXlVkiE/UHyN5kEXsXI/AAAAAAAABOs/RAkGu4MsDLE/s800/419472_389932317745932_836099755_n.jpg",
+  "author": {
+    "$oid": "619822b2c25d06ecc6ff8ab8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6198244bc25d06ecc6ff8ac3"
+  },
+  "topic": "Cars",
+  "title": "Z1 Motorsport Meet",
+  "where": "At Z1 Motorsport",
+  "when": "2021-11-28",
+  "start": "16:00",
+  "end": "18:00",
+  "details": "This is a Z1 Motorsport Meet",
+  "image": "https://io.dropinblog.com/uploaded/blogs/34240099/files/Z1Motorsports_Showroom_2017.jpg",
+  "author": {
+    "$oid": "619822b2c25d06ecc6ff8ab8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6198281bc25d06ecc6ff8b14"
+  },
+  "topic": "Coffee",
+  "title": "Cars and Coffee",
+  "where": "At Cars and Coffee - Charlotte",
+  "when": "2021-12-02",
+  "start": "02:00",
+  "end": "16:00",
+  "details": "This is a cars and coffee \r\nMeet",
+  "image": "https://www.steelstacks.org/wp-content/uploads/sites/3/2019/04/Cars_web.jpg",
+  "author": {
+    "$oid": "6198228dc25d06ecc6ff8ab6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6198285ec25d06ecc6ff8b17"
+  },
+  "topic": "Coffee",
+  "title": "Brad Coffee Bar",
+  "where": "At Brads Coffee Bar",
+  "when": "2021-12-01",
+  "start": "00:00",
+  "end": "15:00",
+  "details": "This is a meet at \r\nBrads Coffee Bar to talk about cars",
+  "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/524557a0-30ef-46a8-8108-08aa03cc5425.jpg",
+  "author": {
+    "$oid": "6198228dc25d06ecc6ff8ab6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "619828a9c25d06ecc6ff8b1a"
+  },
+  "topic": "Coffee",
+  "title": "Rocky River Bar",
+  "where": "Rocky River - Harrisburg",
+  "when": "2021-11-30",
+  "start": "12:00",
+  "end": "15:00",
+  "details": "This is a meet \r\nat Rocky River Coffee Company - Harrisburg",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/2b/62/63/photo3jpg.jpg",
+  "author": {
+    "$oid": "6198228dc25d06ecc6ff8ab6"
+  },
+  "__v": 0
+}]
